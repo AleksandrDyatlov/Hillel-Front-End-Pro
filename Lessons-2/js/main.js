@@ -45,7 +45,7 @@ let errorMessage = 'Попробуйте еще раз';
 let successMessage = 'Вы ввели правильное число';
 
 while (true) {
-	let inputNumber = +prompt('Введите нечётное число', '3' );
+	let inputNumber = prompt('Введите нечётное число', '3' );
 
 	if ( inputNumber % 2 != 0 ) {
 		alert(successMessage);
