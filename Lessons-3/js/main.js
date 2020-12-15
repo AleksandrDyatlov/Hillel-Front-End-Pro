@@ -137,10 +137,67 @@
 
 // 11
 
-// let month = new Date();
+// let lang = prompt('Введите один из языков', '"ru", "en"');
+// let day = prompt('Введите день недели', 'От 1 до 7');
+// let result = '';
 
+// switch(lang) {
+// 	case 'ru':
+// 		switch(Number(day) - 1) {
+// 			case 0:
+// 				alert(result = 'воскресенье');
+// 				break;
+// 			case 1:
+// 				alert(result = 'понедельник');
+// 				break;
+// 			case 2:
+// 				alert(result = 'вторник');
+// 				break;
+// 			case 3:
+// 				alert(result = 'среда');
+// 				break;
+// 			case 4:
+// 				alert(result = 'четверг');
+// 				break;
+// 			case 5:
+// 				alert(result = 'пятница');
+// 				break;
+// 			default:
+// 				alert(result = 'суббота');
+// 		}
+// 		break;
+// 	case 'en':
+// 		switch(Number(day) - 1) {
+// 			case 0:
+// 				alert(result = 'sunday');
+// 				break;
+// 			case 1:
+// 				alert(result = 'monday');
+// 				break;
+// 			case 2:
+// 				alert(result = 'tuesday');
+// 				break;
+// 			case 3:
+// 				alert(result = 'wednesday');
+// 				break;
+// 			case 4:
+// 				alert(result = 'thursday');
+// 				break;
+// 			case 5:
+// 				alert(result = 'friday');
+// 				break;
+// 			default:
+// 				alert(result = 'saturday');
+// 		}
+// 		break;
+// }
 
+// 12
+
+// ***
 // Циклы
+// ***
+
 
 // 1
 
@@ -167,16 +224,16 @@
 // 	}
 // }
 
-// 3
+// 3  ?
 
 // let userName = 'John';
 // let str = 'Happy birthday to you';
 // let strName = `Happy birthday dear ${userName}`;
+// let tempStr = '';
 
 // for (var i = 0; i < 4; i++) {
 // 	console.log(str);
 // }
-
 
 // switch(str) {
 // 	case 1:
@@ -189,6 +246,7 @@
 // 	case 4:
 // 		console.log(str);
 // }
+
 // for (var i = 1; i <= 4; i++) {
 // 	console.log(tempStr = strName + "\n");
 
@@ -201,14 +259,14 @@
 
 // 11
 
-for (var i = 1; i <= 50; i++) {
-	if (i % 3 == 0) {
-		console.log('Fizz');
-	} else if (i % 5 == 0) {
-		console.log('Buzz');
-	} else if (i % 3 == 0 && i % 5 == 0) {
-		console.log('FizzBuzz');
-	} else {
-		console.log(i);
-	}
-}
+// for (var i = 1; i <= 50; i++) {
+// 	if (i % 5 == 0 && i % 3 == 0) {
+// 		console.log('FizzBuzz');
+// 	} else if (i % 5 == 0) {
+// 		console.log('Buzz');
+// 	} else if (i % 3 == 0) {
+// 		console.log('Fizz');
+// 	} else {
+// 		console.log(i);
+// 	}
+// }
