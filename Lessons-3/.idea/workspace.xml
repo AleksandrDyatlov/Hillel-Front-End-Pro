@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e0433c-a350-4e1b-a5e6-9f65671fb308" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lessons-2/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons-2/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607190136050</updated>
       <workItem from="1607190137314" duration="3500000" />
+      <workItem from="1607903484167" duration="110000" />
     </task>
     <servers />
   </component>
@@ -50,5 +51,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
