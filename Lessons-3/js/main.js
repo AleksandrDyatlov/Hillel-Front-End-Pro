@@ -193,6 +193,26 @@
 // }
 
 // 12
+// let name = prompt('Введите ваше имя', 'Kate');
+// let age = prompt('Ваш возраст', '15');
+
+// switch (name, Number(age)) {
+//     case ('John' && 29):
+//         console.log(`Привет (${name}) (${age})`);
+//         break;
+//     case ('Kate' && 15):
+//         console.log(`Привет (${name}) (${age})`);
+//         break;
+//     default:
+//         console.log('Пока');
+// }
+
+// name === 'John' && Number(age) === 29
+//                                    ? console.log(`Привет (${name}) (${age})`)
+//                                    : name === 'Kate' && Number(age) === 15
+//                                                                         ? console.log(`Привет (${name}) (${age})`)
+//                                                                         : console.log('Пока');
+
 
 // ***
 // Циклы
@@ -224,38 +244,68 @@
 // 	}
 // }
 
-// 3  ?
+// 3
 
 // let userName = 'John';
 // let str = 'Happy birthday to you';
 // let strName = `Happy birthday dear ${userName}`;
-// let tempStr = '';
-
-// for (var i = 0; i < 4; i++) {
-// 	console.log(str);
-// }
-
-// switch(str) {
-// 	case 1:
-// 	case 2:
-// 		console.log(str);
-// 		break;
-// 	case 3:
-// 		console.log(strName);
-// 		break;
-// 	case 4:
-// 		console.log(str);
-// }
-
+//
 // for (var i = 1; i <= 4; i++) {
-// 	console.log(tempStr = strName + "\n");
-
-// 	if (i == 2) {
-// 		console.log(tempStr = strName + "\n");
-// 	}
-
-// 	// console.log(tempStr);
+//     switch(i) {
+//         case 1:
+//             console.log(str);
+//             break;
+//         case 2:
+//             console.log(str);
+//             break;
+//         case 3:
+//             console.log(strName);
+//             break;
+//         case 4:
+//             console.log(str);
+//     }
 // }
+
+// 4
+
+// let x = prompt('Введите число', '');
+//
+// for (let i = 1; i <= 10; i++) {
+//     if (x !== null) {
+//         break;
+//     } else if (i === 5) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// 5
+
+// let x = prompt('Введите число', '');
+// let b = 0;
+//
+// for (let i = 1; i < Number(x); i++) {
+//     if ( i % 2 !== 0) {
+//         b = i + b;
+//     }
+// }
+// alert(b);
+
+// 6
+
+// for (let i = 0;; i++) {
+//     let x = +Math.random().toFixed(2);
+//
+//     if (x > 0.9) {
+//         console.log(x);
+//         console.log(i);
+//         break;
+//     }
+// }
+
+// 7
+
+
 
 // 11
 
