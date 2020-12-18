@@ -299,13 +299,13 @@ for (var i = 0; i <= 5; i++) {
 // 6
 
 for (let i = 1;; i++) {
-    let x = +Math.random().toFixed(2);
+	let x = +Math.random().toFixed(2);
 
-    if (x > 0.9) {
-        console.log(x);
-        console.log(i);
-        break;
-    }
+	if (x > 0.9) {
+		 console.log(x);
+		console.log(i - 1);
+		break;
+	}
 }
 
 // 7
@@ -319,7 +319,6 @@ for (let i = 1; i <= 10 ; i++) {
 }
 
 // 8 
-// если вынести с цикла я это понялб задание то было в одном цикле это сделать, если так было возможно, то я зря мучался ))
 
 let str = '01';
 
