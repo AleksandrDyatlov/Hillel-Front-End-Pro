@@ -270,17 +270,13 @@
 
 // 4
 
-for (var i = 0; i <= 5; i++) {
-	let num = prompt('Введите число', '');
+for (var i = 0;; i++) {
+	let conf = confirm('Вы уверены прервать цикл?');
 
-	if (i === 2) {
-		let conf = confirm('Вы уверены, что хотите отменить ввод чисел?');
-
-		if (conf) {
-			break;
-		} else {
-			continue;
-		}
+	if (conf) {
+		break;
+	} else {
+		continue;
 	}
 }
 
@@ -302,29 +298,28 @@ for (let i = 1;; i++) {
 	let x = +Math.random().toFixed(2);
 
 	if (x > 0.9) {
-		 console.log(x);
-		console.log(i - 1);
+		alert(`Число ${x} прервало цикл на ${i} итерации`);
 		break;
 	}
 }
 
 // 7
 
-for (let i = 1; i <= 10 ; i++) {
-	for (let j = 1; j <= 10; j++) {
-		let c = i * j;
+// for (let i = 1; i <= 10 ; i++) {
+// 	for (let j = 1; j <= 10; j++) {
+// 		let c = i * j;
 
-		console.log(`${i} * ${j} = ${c}`);
-	}
-}
+// 		console.log(`${i} * ${j} = ${c}`);
+// 	}
+// }
 
 // 8 
 
-let str = '01';
+// let str = '01';
 
-for (let i = 0, a = 0, b = 1, c = 0; i <= 5; i++, c = a + b, a = b, b = c, str = str + c) {}
+// for (let i = 0, a = 0, b = 1, c = 0; i <= 5; i++, c = a + b, a = b, b = c, str = str + c) {}
 
-console.log(str);
+// console.log(str);
 
 // 9
 

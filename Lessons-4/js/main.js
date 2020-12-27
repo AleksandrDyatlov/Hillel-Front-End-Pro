@@ -31,8 +31,6 @@
 // 	arr.push(Math.random().toFixed(2));
 // }
 
-// console.log(arr);
-
 // for (var i = 0; i < arr.length; i++) {
 // 	arr[i] = arr[i] ** 5;
 
@@ -53,39 +51,45 @@
 // arr.splice(3, 1);
 // console.log(arr);
 
-// 4 ?
+// 4
 
 // ET 10
-// AT 1
+// AT 30
 
-let str = 'Как однажды Жак звонарь сломал фонарь головой';
-let arr = str.split(' ');
-arr.splice(1, 1);
-arr.splice(3, 0, 'однажды');
-arr[1] = arr.splice(1,1, arr[1]);
-// arr.splice(4, 1);
-console.log(arr);
+// let str = 'Как однажды Жак звонарь сломал фонарь головой';
+// let fin = 'Как Жак звонарь однажды сломал головой фонарь';
+// let arr = str.split(' ');
+// let tempItem1 = arr.splice(1, 1);
+// let tempItem2 = arr.splice(4, 1);
+
+// arr.push(tempItem2[0]);
+// arr.splice(3, 0, tempItem1[0]);
+
+// let strNew = arr.join(' ');
+
+// alert(`${str} ${'\n'} ${strNew}`);
 
 // 5
+
 // ET 15
 // AT 20
 
-// let property = prompt('Введите свойство', '');
-// let value = '';
-// let person = {
-// 	'name': 'John',
-// 	'age': 23,
-// 	'gender': 'male'
-// }
+let property = prompt('Введите свойство', '');
+let value = '';
+let person = {
+	'name': 'John',
+	'age': 23,
+	'gender': 'male'
+}
 
-// if (property in person) {
-// 	console.log(person.name);
-// } else {
-// 	value = prompt('Введите значение свойства', '');
-// 	person[property] = value;
-// };
+if (property in person) {
+	console.log(person[property]);
+} else {
+	value = prompt('Введите значение свойства', '');
+	person[property] = value;
+};
 
-// console.log(person);
+console.log(person);
 
 // 6
 
@@ -115,11 +119,11 @@ console.log(arr);
 // AT 30
 
 // let dates = {
-// 	current: new Date(),
+// 	current: Date.parse(new Date()),
 // 	past: Date.parse(new Date()) - (365 * 24 * 3600 * 1000)
 // }
 
-// let userDate = Date.parse(new Date(prompt('Введите дату в формате', '2020-12-20')));
+// let userDate = Date.parse(new Date(prompt('Введите дату в формате', '2019-12-22')));
 
 // if (userDate <= dates.current && userDate >= dates.past) {
 // 	alert('Введенная дата попадает в диапазон заданных дат');
@@ -170,6 +174,7 @@ console.log(arr);
 // for (let i = 0; i < arrInner.length; i += 10) {
 // 	arr.push(arrInner.slice(i, i + 10));
 // }
+
 // console.log(arr);
 
 // 10
