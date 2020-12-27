@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75e0433c-a350-4e1b-a5e6-9f65671fb308" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons-4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons-4/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ShopperExpress-Dealmaker-Pro" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -38,6 +38,9 @@
       <workItem from="1607190137314" duration="3500000" />
       <workItem from="1607903484167" duration="110000" />
       <workItem from="1608069522976" duration="9633000" />
+      <workItem from="1609012160310" duration="122000" />
+      <workItem from="1609012298134" duration="76000" />
+      <workItem from="1609062159096" duration="597000" />
     </task>
     <servers />
   </component>
