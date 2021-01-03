@@ -38,16 +38,73 @@
 
 // 3
 
-let users = [
-    {firstName: 'John', lastName: 'Snow', age: 16},
-    {firstName: 'Eddart', lastName: 'Stark', age: 30},
-    {firstName: 'Keytlin', lastName: 'Stark', age: 28},
-    {firstName: 'Ricard', lastName: 'Karstark', age: 15},
-    {firstName: 'Rumsy', lastName: 'Snow', age: 24},
-    {firstName: 'Mira', lastName: 'Rid', age: 26},
-    {firstName: 'Leo', lastName: 'Lefford', age: 55},
-    {firstName: 'Robert', lastName: 'Barateon', age: 17},
-    {firstName: 'Merrit', lastName: 'Trunt', age: 42},
-    {firstName: 'Mendon',lastName: 'Moor', age: 38}
-];
+// ET 20
+// AT 40
 
+// let users = [
+// 	{firstName: 'John', lastName: 'Snow', age: 16},
+// 	{firstName: 'Eddart', lastName: 'Stark', age: 30},
+// 	{firstName: 'Keytlin', lastName: 'Stark', age: 28},
+// 	{firstName: 'Ricard', lastName: 'Karstark', age: 15},
+// 	{firstName: 'Rumsy', lastName: 'Snow', age: 24},
+// 	{firstName: 'Mira', lastName: 'Rid', age: 26},
+// 	{firstName: 'Leo', lastName: 'Lefford', age: 55},
+// 	{firstName: 'Robert', lastName: 'Barateon', age: 17},
+// 	{firstName: 'Merrit', lastName: 'Trunt', age: 42},
+// 	{firstName: 'Mendon',lastName: 'Moor', age: 38}
+// ];
+
+// let youngUsers = users.filter(function(user) {
+// 	return user.age < 18;
+// });
+
+// users.forEach(function(user) {
+// 	user['fullname'] = user.firstName + user.lastName;
+// });
+
+// let fullNames = users.map(function(user) {
+// 	return user['fullname'];
+// });
+
+// 4
+
+// ET 10
+// AT 40
+
+// let arr = ['John',1,2,3,4,5];
+
+// let shiftArr = (arr) => {
+// 	arr.splice(0, 1);
+// }
+
+// shiftArr(arr);
+
+// 5
+
+// ET 10
+// AT 60
+
+// let arr = [1,2,3,4];
+// let newArr = [];
+
+// function pushArr(arr, ...rest) {
+// 	newArr = arr.concat(...rest);
+// }
+
+// pushArr(arr, 50, 30, 'John');
+// console.log(newArr);
+
+// 6
+
+// ET 20
+// AT 40
+let newArr = [];
+
+let source = {firstname: 'Tom', age: 10};
+
+function extend(arr, ...rest) {
+	newArr = arr.concat(...rest);
+};
+
+let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
+console.log(s);
