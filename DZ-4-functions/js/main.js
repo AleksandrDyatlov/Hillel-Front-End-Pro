@@ -98,13 +98,28 @@
 
 // ET 20
 // AT 40
-let newArr = [];
+let clone = {};
 
 let source = {firstname: 'Tom', age: 10};
 
-function extend(arr, ...rest) {
-	newArr = arr.concat(...rest);
+function extend() {
+	let args = [];
+
+	for (let i = 0; i < arguments.length; i++) {
+		args[i] = arguments[i];
+	}
+
+	args.reduce(function (accumulator, currentValue) {
+		return accumulator[key] + currentValue[ey];
+	});
+
+	console.log(args);
+
+	clone = args;
 };
 
 let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
 console.log(s);
+
+// let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
+// console.log(s);
