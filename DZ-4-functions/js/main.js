@@ -168,12 +168,12 @@ function createAdder(value) {
 }
 
 let hello = createAdder('Hello, ');
-alert( hello('John') ); // Hello, John
-alert( hello('Harry') ); // Hello, Harry
+alert(hello('John')); // Hello, John
+alert(hello('Harry')); // Hello, Harry
 
 let plus = createAdder(5);
-alert( plus(1) ); // 6
-alert( plus(5) ); // 10
+alert(plus(1)); // 6
+alert(plus(5)); // 10
 
 
 
