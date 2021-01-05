@@ -106,20 +106,19 @@ function extend() {
 	let args = [];
 
 	for (let i = 0; i < arguments.length; i++) {
-		args[i] = arguments[i];
+		args.push(arguments[i]);
 	}
 
-	args.reduce(function (accumulator, currentValue) {
-		return accumulator[key] + currentValue[ey];
-	});
+	let amount = args.reduce(function(total, person) {
+		return total  person;
+	}, {});
 
-	console.log(args);
-
-	clone = args;
-};
+	console.log(amount);
+}
 
 let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
-console.log(s);
+// console.log(s);
 
 // let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
 // console.log(s);
+
