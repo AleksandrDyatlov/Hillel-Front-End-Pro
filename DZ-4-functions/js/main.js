@@ -98,27 +98,82 @@
 
 // ET 20
 // AT 40
-let clone = {};
 
-let source = {firstname: 'Tom', age: 10};
-
-function extend() {
-	let args = [];
-
-	for (let i = 0; i < arguments.length; i++) {
-		args.push(arguments[i]);
-	}
-
-	let amount = args.reduce(function(total, person) {
-		return total  person;
-	}, {});
-
-	console.log(amount);
-}
-
-let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
-// console.log(s);
-
+// let source = {firstname: 'Tom', age: 10};
+//
+// function extend() {
+// 	let args = [...arguments];
+//
+// 	const obj = {};
+//
+// 	for (let i = 0; i < args.length; i++) {
+// 		for (let key in args[i]) {
+// 			obj[key] = args[i][key];
+// 		}
+// 	}
+// 	return obj;
+// }
+// //
 // let s = extend(source, {firstname: 'John'}, {lastname: 'Doe'});
 // console.log(s);
+
+// 7
+
+// ET 15
+// AT 15
+
+// function setComment(date, message, author = 'Anonymous') {
+// 	if (!date || !message) {
+// 		alert('Данные переданы некорректно');
+// 		return;
+// 	}
+//
+// 	console.log(`${author}, ${date}\n${message}`);
+// }
+// setComment(null, 'Everything is ok');
+// setComment('2016-11-02', 'Everything is ok', 'John');
+// setComment('2016-11-02', 'You could do it better!');
+
+
+// Замыкания
+// 1
+
+// ET 15
+// AT 30
+
+// function createTimer() {
+// 	let t1 = performance.now();
+//
+// 	return () => {
+// 		let t2 = performance.now();
+// 		return "Действие заняло " + (t2 - t1) + " милисекунд.";
+// 	};
+// }
+//
+// let timer = createTimer();
+// alert('!');
+// alert(timer());
+
+// 2
+
+// ET 15
+// AT 30
+
+function createAdder(value) {
+	let param1 = value;
+
+	return (param2) => {
+		return param1 + param2;
+	};
+}
+
+let hello = createAdder('Hello, ');
+alert( hello('John') ); // Hello, John
+alert( hello('Harry') ); // Hello, Harry
+
+let plus = createAdder(5);
+alert( plus(1) ); // 6
+alert( plus(5) ); // 10
+
+
 
