@@ -3,18 +3,16 @@
 // ET 15
 // AT 15  это если готовый переписать на классы ))
 
-let ctx;
-
 class Canvas {
 	constructor(initCanvas) {
 		this.canvas = document.getElementById(initCanvas);
-		ctx = this.canvas.getContext("2d");
-		ctx.globalAlpha = .5;
+		this.ctx = this.canvas.getContext("2d");
+		this.ctx.globalAlpha = .5;
 	}
 
 	add() {
 		for (let i = 0; i < arguments.length; i++) {
-			arguments[i].draw();
+			arguments[i].draw(this.ctx);
 		}
 	}
 }
@@ -35,7 +33,7 @@ class Line extends Figure {
 		this.y2 = y2;
 	}
 
-	draw() {
+	draw(ctx) {
 		ctx.beginPath();
 		ctx.strokeStyle = this.color;
 		ctx.moveTo(this.x, this.y);
@@ -52,7 +50,7 @@ class Rect extends Figure {
 		this.h = h;
 	}
 
-	draw() {
+	draw(ctx) {
 		ctx.beginPath();
 		ctx.fillStyle = this.color;
 		ctx.fillRect(this.x, this.y, this.w, this.h);
@@ -67,7 +65,7 @@ class Circle extends Figure {
 		this.r = r;
 	}
 
-	draw() {
+	draw(ctx) {
 		ctx.beginPath();
 		ctx.fillStyle = this.color;
 		ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
@@ -86,7 +84,7 @@ class Pattern extends Figure {
 		this.posX = x;
 	}
 
-	draw() {
+	draw(ctx) {
 		ctx.beginPath();
 		ctx.strokeStyle = this.color;
 		ctx.lineWidth = this.strokeWidth;

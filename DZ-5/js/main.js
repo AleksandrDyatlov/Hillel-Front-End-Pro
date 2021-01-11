@@ -164,3 +164,30 @@
 
 // ET ?
 // AT 0
+
+function sum() {
+	let result = 0;
+	let args = [];
+
+	for (let i = 0; i < arguments.lenth; i++) {
+		args[i] = arguments[i];
+	}
+	console.log(args);
+}
+
+sum(1, 2, 3, 4, 5);
+
+// let arr = [0, 1];
+//
+// function fibo(count) {
+// 	arr[arr.length] = arr[arr.length - 2] + arr[arr.length - 1];
+// 	count -= 1;
+//
+// 	if (count !== 0) {
+// 		return fibo(count);
+// 	}
+//
+// 	return arr;
+// }
+//
+// console.log(fibo(20));
