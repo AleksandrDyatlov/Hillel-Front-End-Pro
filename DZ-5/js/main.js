@@ -165,29 +165,27 @@
 // ET ?
 // AT 0
 
-function sum() {
-	let result = 0;
-	let args = [];
-
-	for (let i = 0; i < arguments.lenth; i++) {
-		args[i] = arguments[i];
-	}
-	console.log(args);
-}
-
-sum(1, 2, 3, 4, 5);
-
-// let arr = [0, 1];
+// function cube(x) {
+// 	let result = 1;
+// 	let n = 3;
 //
-// function fibo(count) {
-// 	arr[arr.length] = arr[arr.length - 2] + arr[arr.length - 1];
-// 	count -= 1;
-//
-// 	if (count !== 0) {
-// 		return fibo(count);
+// 	// умножаем result на x n раз в цикле
+// 	for (let i = 0; i < n; i++) {
+// 		result *= x;
 // 	}
 //
-// 	return arr;
+// 	return result;
 // }
 //
-// console.log(fibo(20));
+// alert(cube(2)); // 8
+
+function cube(x, y) {
+	let n = y || 3;
+	if (n === 1) {
+		return x;
+	}
+
+	return x * cube(x, n - 1);
+}
+
+alert(cube(2));  // 8
