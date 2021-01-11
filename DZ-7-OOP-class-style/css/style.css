@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+    margin: 100px auto;
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+}
