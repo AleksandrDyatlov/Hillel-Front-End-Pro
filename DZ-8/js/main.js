@@ -54,7 +54,7 @@ function setClock() {
 	btnWrapp.append(btnStart, btnStop);
 	btnStart.classList.add(activeClass);
 
-	btnStart.onclick = function() {
+	btnStart.addEventListener('click', function() {
 		if (!isTimerActive) {
 			timeInterval = setInterval(updateClock, 1000);
 		}
@@ -63,16 +63,16 @@ function setClock() {
 
 		this.classList.add(activeClass);
 		btnStop.classList.remove(activeClass);
-	};
+	});
 
-	btnStop.onclick = function() {
+	btnStop.addEventListener('click', function() {
 		clearInterval(timeInterval);
 
 		isTimerActive = false;
 
 		this.classList.add(activeClass);
 		btnStart.classList.remove(activeClass);
-	};
+	});
 
 	updateClock();
 
