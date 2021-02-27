@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'digitalmedium';
+    src: url('../fonts/16198-webfont.woff2') format('woff2'),
+    url('../fonts/16198-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font: 16px/1.4 'digitalmedium', sans-serif;
+}
+
+.timer {
+    margin: 20px auto;
+    width: 270px;
+    font-size: 50px;
+    line-height: 1;
+    color: midnightblue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.3);
+}
+
+.btn-wrapp {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wrapp button {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 1px solid rebeccapurple;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    min-width: 100px;
+    font-family: 'digitalmedium', sans-serif;
+}
+
+.btn-wrapp button.active {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.btn-wrapp button:focus {
+    outline: none;
+}
