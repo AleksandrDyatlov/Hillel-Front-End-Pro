@@ -5,7 +5,7 @@
 // ET 0.5h
 // AT 2
 
-const holder = document.body;
+const body = document.querySelector('body');
 const title = document.createElement('h2');
 const div = document.createElement('div');
 const absoluteCoords = document.createElement('h3');
@@ -15,8 +15,8 @@ title.innerHTML = 'Событыя';
 
 div.setAttribute('style', 'width: 400px; height: 400px; background-color: tomato;');
 
-holder.prepend(title);
-holder.append(div);
+body.prepend(title);
+body.append(div);
 div.before(absoluteCoords);
 div.after(relativeCoords);
 
@@ -28,7 +28,7 @@ const divPosTop = div.offsetTop;
 
 console.log(divPosLeft, divPosTop);
 
-holder.onmousemove = function (e) {
+body.onmousemove = function (e) {
 	absoluteCoords.innerHTML = `X: ${e.pageX} Y: ${e.pageY}`;
 };
 

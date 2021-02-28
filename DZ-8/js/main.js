@@ -2,8 +2,6 @@
 
 // Работа с часами (работаем с нативным JS)
 
-// 1
-
 // ET 30
 // AT 3
 
@@ -31,13 +29,13 @@ function getZero(num) {
 }
 
 function creatElem(tagName, className, innerText = '') {
-	const holder = document.body;
+	const body = document.querySelector('body');
 	const elem = document.createElement(tagName);
 	const elemText = document.createTextNode(innerText);
 
 	elem.classList.add(className);
 	elem.appendChild(elemText);
-	holder.prepend(elem);
+	body.prepend(elem);
 
 	return elem;
 }
