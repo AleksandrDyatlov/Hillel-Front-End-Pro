@@ -1,0 +1,9 @@
+*, ::before, ::after  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 16px/1.4 Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
