@@ -6,6 +6,19 @@
 // AT 1
 
 const body = document.querySelector('body');
+const btn = document.createElement('button');
+
+btn.innerHTML = 'Посмотреть планеты';
+body.prepend(btn);
+
+btn.addEventListener('click', function() {
+	fetch('https://trevadim.github.io/vue/data/data.json')
+		.then((data) => data.json())
+		.then((result) => createContent(result))
+		.catch((error) => console.log("error", error));
+
+	this.remove();
+});
 
 const createContent = (data) => {
 	const planets = data.planets;
@@ -49,9 +62,4 @@ const createContent = (data) => {
 		img.setAttribute('src', planetItem.url);
 	}
 };
-
-fetch('https://trevadim.github.io/vue/data/data.json')
-	.then((data) => data.json())
-	.then((result) => createContent(result))
-	.catch((error) => console.log("error", error));
 
