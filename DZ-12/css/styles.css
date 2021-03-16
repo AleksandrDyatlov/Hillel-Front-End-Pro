@@ -7,3 +7,51 @@ body {
     font: 16px/1.4 Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
+
+video {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+.film-slider .slick-slide {
+    background-color: #000;
+    position: relative;
+}
+
+.film-slider .slick-slide video {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.film-slider .slick-slide::before {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%;
+    width: 0;
+}
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    transition: opacity .15s ease;
+    font-size: 40px;
+    line-height: 1;
+    text-shadow: 0 3px 5px rgba(0,0,0,.5);
+
+}
