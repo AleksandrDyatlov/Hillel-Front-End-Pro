@@ -1,0 +1,38 @@
+.table-wrapp {
+	display: flex;
+}
+
+.table {
+	margin: 0;
+	table-layout: fixed;
+}
+
+.table-vertical {
+	width: 30%;
+}
+
+.todolist {
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&:hover {
+			.btn {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+	h6 {
+		margin: 0;
+	}
+
+	.btn {
+		flex-shrink: 0;
+		margin-left: 10px;
+		opacity: 0;
+		visibility: hidden;
+	}
+}

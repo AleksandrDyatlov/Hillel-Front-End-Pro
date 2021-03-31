@@ -1,0 +1,51 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+.table-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.table {
+  margin: 0;
+  table-layout: fixed; }
+
+.table-vertical {
+  width: 30%; }
+
+.todolist li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .todolist li:hover .btn {
+    visibility: visible;
+    opacity: 1; }
+
+.todolist h6 {
+  margin: 0; }
+
+.todolist .btn {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 10px;
+  opacity: 0;
+  visibility: hidden; }
+
+body {
+  min-width: 320px; }
+/*# sourceMappingURL=main.css.map */
