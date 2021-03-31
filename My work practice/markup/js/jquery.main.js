@@ -5,42 +5,38 @@ jQuery(function() {
 
 function initToDoList() {
 	const list = jQuery('.todolist');
-	const listItems = list.find('li');
-	const btnDel = listItems.find('.btn');
+	// const listItems = list.find('li');
 	const btnAdd = jQuery('#btn-add');
 	const input = jQuery('#input');
 	let title = '';
 
-	btnDel.on('click', removeItem);
-
-	getVal();
 	btnAdd.on('click', addItem);
 
-	input.keypress(function (e) {
+	list.on('click', '.btn-del', removeItem);
+
+	input.keypress(function(e) {
 		if (e.keyCode === 13) {
 			addItem();
 		}
+	}).keyup(function() {
+		title = input.val();
 	});
-
-	function getVal() {
-		input.keyup(function() {
-			title = input.val();
-		});
-	}
 
 	function addItem() {
 		if (title) {
 			list.append(
 				`<li class="ps-3 pe-2 list-group-item">
-				<h6>${title}</h6>
-				<button class="btn btn-close" type="button"></button>
-			</li>`
+					<h6>${title}</h6>
+					<button class="btn btn-del btn-close" type="button"></button>
+				</li>`
 			);
 		}
+
+		input.val('');
 	}
 
 	function removeItem(e) {
-		jQuery(e.currentTarget).parent().remove();
+		jQuery(e.target).parent().remove();
 	}
 
 	// jQuery(listItems).each(function() {
