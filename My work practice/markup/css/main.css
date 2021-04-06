@@ -35,16 +35,76 @@
   .todolist li:hover .btn {
     visibility: visible;
     opacity: 1; }
+  .todolist li.done {
+    background-color: #4bc142;
+    color: #fff; }
+    .todolist li.done .btn-close,
+    .todolist li.done .btn-done {
+      opacity: 1;
+      visibility: visible;
+      background-color: #fff; }
+    .todolist li.done .btn-close {
+      background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff' %3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
+  .todolist li.editable {
+    background-color: #f8f9fa; }
+    .todolist li.editable .btn {
+      opacity: 1;
+      visibility: visible; }
 
 .todolist h6 {
   margin: 0; }
+  .todolist h6[contenteditable="true"] {
+    border: 1px dashed red;
+    outline: none; }
+
+.todolist .btn-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  .todolist .btn-holder:first-of-type .btn {
+    margin-left: 0;
+    margin-right: 5px; }
 
 .todolist .btn {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-left: 10px;
+  margin-left: 5px;
   opacity: 0;
   visibility: hidden; }
+  .todolist .btn:hover {
+    background-color: #e9ecef; }
+  .todolist .btn:focus {
+    box-shadow: none; }
+
+.todolist .btn-done,
+.todolist .btn-down,
+.todolist .btn-up,
+.todolist .btn-save,
+.todolist .btn-edit {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #000;
+  border: 0;
+  border-radius: 0.25rem; }
+
+.todolist .btn-edit {
+  background: transparent url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M27 0c2.761 0 5 2.239 5 5 0 1.126-0.372 2.164-1 3l-2 2-7-7 2-2c0.836-0.628 1.874-1 3-1zM2 23l-2 9 9-2 18.5-18.5-7-7-18.5 18.5zM22.362 11.362l-14 14-1.724-1.724 14-14 1.724 1.724z'%3E%3C/path%3E%3C/svg%3E") center/1em auto no-repeat; }
+
+.todolist .btn-save {
+  background: transparent url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M21 33.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5zM4 0c-2.21 0-4 1.79-4 4v40c0 2.21 1.79 4 4 4h40c2.21 0 4-1.79 4-4l-0-34.080c0-1.34-0.529-2.53-1.38-3.39l-5.080-5.060c-0.899-0.91-2.16-1.47-3.54-1.47h-34zM7.2 5h2.8v7.8c0 1.22 0.98 2.2 2.2 2.2h2.6c1.22 0 2.2-0.98 2.2-2.2l-0-7.8h18.8c1.22 0 2.2 0.98 2.2 2.2v9.6c0 1.22-0.98 2.2-2.2 2.2h-28.6c-1.22 0-2.2-0.98-2.2-2.2v-9.6c0-1.22 0.98-2.2 2.2-2.2zM17 33.5c0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5-6.5-2.91-6.5-6.5z'%3E%3C/path%3E%3C/svg%3E") center/1em auto no-repeat; }
+
+.todolist .btn-up {
+  background: transparent url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z'%3E%3C/path%3E%3C/svg%3E") center/1em auto no-repeat; }
+
+.todolist .btn-down {
+  background: transparent url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z'%3E%3C/path%3E%3C/svg%3E") center/1em auto no-repeat; }
+
+.todolist .btn-done {
+  background: transparent url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cpath fill='%230dbc00' d='M26.109 8.844c0 0.391-0.156 0.781-0.438 1.062l-13.438 13.438c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-7.781-7.781c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.609 10.25-10.266c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062z'%3E%3C/path%3E%3C/svg%3E") center/1em auto no-repeat; }
 
 body {
   min-width: 320px; }
